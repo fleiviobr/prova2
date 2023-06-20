@@ -11,18 +11,20 @@
         <label for="data">Data:</label>
         <input type="date" name="data">
         <label for="tipo">Tipo:</label>
-        <select name="tipo">
-            <option value="1">Entrada</option>
-            <option value="2">Saída</option>
-        </select>
+        <div><input type="radio" id="contactChoice1" name="tipo" value="entrada" />
+        <label for="contactChoice1">Entrada</label></div>
+
+        <div><input type="radio" id="contactChoice2" name="tipo" value="saida" />
+        <label for="contactChoice2">Saída</label></div>
+
         <label for="valor">Valor:</label>
         <input type="number" step="0.1" name="valor">
         <label for="historico">Histórico:</label>
         <input type="text" name="historico">
         <label for="cheque">Cheque:</label>
         <select name="cheque">
-            <option value="1">Sim</option>
-            <option value="2">Não</option>
+            <option value="Sim">Sim</option>
+            <option value="Nao">Não</option>
         </select>
         
         <input type="submit" value="Enviar">

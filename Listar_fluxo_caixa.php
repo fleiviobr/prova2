@@ -32,14 +32,14 @@
                 echo "<td>" . $row ['data'] . "</td>";
                 echo "<td>" . $row ['tipo'] . "</td>";
                 echo "<td>" . $row ['valor'] . "</td>";
-                echo "<td>" . $row ['historico'] . "</td>";
+                echo "<td><a href='Altera_fluxo_caixa.php?id=" . $row['id'] . "'>" . $row ['historico'] ."</a></td>";
                 echo "<td>" . $row ['cheque'] . "</td>";
-                echo "<td><a href='Excluir_fluxo_caixa.php?id=" . $row['id'] . "'>Excluir</a></td></tr>";
+                echo "<td><a href='excluir_fluxo_caixa.php?id=" . $row['id'] . "'>Excluir</a></td></tr>";
             }while($row = mysqli_fetch_array($result))
         ?>
         </table>
         <br>
-    <h2><a href="../index.php">Voltar</a></h2>
     </div>
+    <a href="index.php">Voltar</a>
 </body>
 </html>
