@@ -13,4 +13,9 @@ if($tipo == 'entrada'){
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);
 
-echo "<h1>Valor: R$ " . $row['valor'] . "</h1>";    
+
+if($tipo == 'saida'){
+    echo "<h1>Valor: R$ -" . $row['valor'] . "</h1>";
+} else{
+    echo "<h1>Valor: R$ " . $row['valor'] . "</h1>";
+}
