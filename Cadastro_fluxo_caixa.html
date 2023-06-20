@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <label for="data">Data:</label>
+        <input type="date" name="data">
+        <label for="tipo">Tipo:</label>
+        <select name="tipo">
+            <option value="1">Entrada</option>
+            <option value="2">Saída</option>
+        </select>
+        <label for="valor">Valor:</label>
+        <input type="number" step="0.1" name="valor">
+        <label for="historico">Histórico:</label>
+        <input type="text" name="historico">
+        <label for="cheque">Cheque:</label>
+        <select name="cheque">
+            <option value="1">Sim</option>
+            <option value="2">Não</option>
+        </select>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <a href="index.php">Voltar</a>
+</body>
+</html>
