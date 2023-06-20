@@ -37,12 +37,9 @@
                 echo "<td><a href='Excluir_fluxo_caixa.php?id=" . $row['id'] . "'>Excluir</a></td></tr>";
             }while($row = mysqli_fetch_array($result))
         ?>
-        <tr>
-            <td><a href="index.php">Vltar</a></td>
-        </tr>
         </table>
         <br>
-    <h2><a href="../index.php">Back</a></h2>
+    <h2><a href="../index.php">Voltar</a></h2>
     </div>
 </body>
 </html>
